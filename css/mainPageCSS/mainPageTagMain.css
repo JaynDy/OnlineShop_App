@@ -1,0 +1,227 @@
+main {
+  width: 100%;
+}
+.wallpaper-text {
+  background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+.wallpaper {
+  pointer-events: none;
+}
+.wallpaper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Playfair Display", sans-serif;
+  padding: 200px 350px 0px 350px;
+  color: rgba(255, 255, 255, 1);
+  z-index: 0;
+  @media screen and (max-width: 1700px) {
+    padding: 200px 250px 0 250px;
+  }
+  @media screen and (max-width: 1300px) {
+    padding: 200px 150px 0 150px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 0 10px;
+    margin-top: 120px;
+  }
+}
+
+.wallpaper-text h1 {
+  max-width: 49%;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 90px;
+  @media screen and (max-width: 768px) {
+    max-width: 60%;
+    font-size: 60px;
+    line-height: 65px;
+  }
+}
+.wallpaper-text h2 {
+  font-family: "Montserrat";
+  max-width: 45%;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+  word-spacing: 20%;
+  padding: 40px 0 0;
+  opacity: 0.8;
+  @media screen and (max-width: 768px) {
+    max-width: 50%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0 20px;
+  }
+  @media screen and (max-width: 376px) {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+.wallpaper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    max-height: 761px;
+  }
+  @media screen and (max-width: 376px) {
+    max-height: 331px;
+  }
+}
+
+.products {
+  padding: 100px 350px 50px 350px;
+  display: grid;
+  grid-template-areas:
+    "a b b"
+    "c b b";
+  gap: 20px;
+  width: calc(100% - 700px);
+  @media screen and (max-width: 1700px) {
+    width: calc(100% - 500px);
+    padding: 100px 250px 50px 250px;
+  }
+  @media screen and (max-width: 1300px) {
+    width: calc(100% - 300px);
+    padding: 100px 150px 50px 150px;
+  }
+  @media screen and (max-width: 1150px) {
+    width: calc(100% - 20px);
+    padding: 20px 10px 0;
+  }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    z-index: -1;
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
+.food {
+  grid-area: a;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+.house {
+  grid-area: b;
+  @media screen and (max-width: 460px) {
+    width: 180px;
+    height: 300px;
+  }
+}
+.office {
+  grid-area: c;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.product {
+  background: rgba(244, 244, 244, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    justify-content: left;
+  }
+}
+
+.text-wrapper {
+  width: 40%;
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+}
+
+.product p {
+  padding: 30px 0 10px;
+  font-size: 18px;
+  line-height: 27px;
+  opacity: 0.5;
+  @media screen and (max-width: 768px) {
+    padding: 10px 0 10px;
+  }
+}
+
+.product h3 {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+img.chicken {
+  width: 100%;
+  max-width: 156px;
+  max-height: 220px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+  @media screen and (max-width: 1500px) {
+    margin-right: 10px;
+    max-width: 140px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 110px;
+  }
+}
+img.fox {
+  width: 100%;
+  max-width: 391px;
+  max-height: 461px;
+  @media screen and (max-width: 1800px) {
+    max-height: 440px;
+  }
+  @media screen and (max-width: 500px) {
+    max-height: 350px;
+  }
+  @media screen and (max-width: 376px) {
+    max-width: 232px;
+    max-height: 274px;
+  }
+}
+
+.btn-allFoxes {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  @media screen and (max-width: 1150px) {
+    margin-bottom: 20px;
+  }
+}
+
+.allFoxes {
+  width: 598px;
+  height: 70px;
+  margin: 20px 0 50px;
+  background-color: rgba(204, 85, 32, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  @media screen and (max-width: 1150px) {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-top: 0;
+    margin: 0 10px;
+  }
+}

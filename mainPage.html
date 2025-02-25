@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Playfair+Display:wght@400;500;600;700&family=Sigmar&family=Ysabeau:ital,wght@0,200;0,600;1,1;1,300;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/mainPageCSS/mainPageMain.css" />
+    <link rel="stylesheet" href="css/mainPageCSS/mainPageTagHeader.css" />
+    <link rel="stylesheet" href="css/mainPageCSS/mainPageTagMain.css" />
+    <link rel="stylesheet" href="css/mainPageCSS/mainPageCart.css" />
+    <link rel="stylesheet" href="css/tagFooter.css" />
+    <title>OnlineShop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header-main">
+        <div class="header-container">
+          <div class="menu">
+            <div class="dots">
+              <div class="dot">.</div>
+              <div class="dot">.</div>
+              <div class="dot">.</div>
+            </div>
+            <div class="menu-list">
+              <a href="mainPage.html"
+                ><div class="logo-start">
+                  Fox
+                  <div class="imgfox"></div>
+                  shop
+                </div>
+              </a>
+
+              <ul class="menu-main">
+                <li>
+                  <a href="mainPage.html">
+                    <strong class="home">Shop</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="mainPage.html">
+                    <strong class="about-color">Mainpage</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="ourHistory.html">
+                    <strong>Our history</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="allItems.html">
+                    <strong>All items</strong>
+                  </a>
+                </li>
+                <li class="exit-menu">
+                  <label for="menu-checkbox" class="close-menu">
+                    <img class="img-exit" src="icon/exit-white.svg" alt="#" />
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cart" id="cart">
+              <div class="cart-icon">
+                <div class="cart-img">
+                  <div class="cart-num" id="cart-num"></div>
+                </div>
+              </div>
+              <a href="allItems.html">
+                <div class="img-fox"></div>
+              </a>
+            </div>
+            <div class="popup">
+              <div class="popup__container" id="popup_container">
+                <div class="popup__item" id="popup_product_list"></div>
+                <button type="button" class="popup__close" id="popup_close">
+                  ✖
+                </button>
+              </div>
+            </div>
+
+            <div class="overlay" id="overlay"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="wallpaper-text">
+          <h1>Discover foxlife</h1>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur. Phar eget turpis sem
+            ultricies dolor sit amet consectetur.
+          </h2>
+        </div>
+        <div class="wallpaper">
+          <div
+            class="wallpaper-slide"
+            style="background-image: url(img/mainImg.png)"
+          ></div>
+        </div>
+
+        <div class="products">
+          <div class="product food">
+            <div class="text-wrapper">
+              <p>#Food</p>
+              <h3>Lorem ipsum dolor sit amet ipsum</h3>
+            </div>
+            <img class="chicken" src="img/firstChicken.png" alt="" />
+          </div>
+
+          <div class="product office">
+            <img class="chicken" src="img/secondChicken.png" alt="" />
+            <div class="text-wrapper">
+              <p>#Office</p>
+              <h3>Lorem ipsum dolor sit amet ipsum</h3>
+            </div>
+          </div>
+
+          <div class="product house">
+            <div class="text-wrapper">
+              <p>#House</p>
+              <h3>Lorem ipsum dolor sit amet ipsum</h3>
+            </div>
+            <img class="fox" src="img/fox.png" alt="" />
+          </div>
+        </div>
+        <a href="allItems.html" class="btn-allFoxes">
+          <button type="button" class="allFoxes">All foxes</button>
+        </a>
+        <div class="newsletter">
+          <h4>Join our newsletter</h4>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur. Molestie turpis quis turpis
+            fermentum egestas bibendum.Lorem ipsum dolor sit amet consectetur.
+          </h5>
+          <div class="input-newsletter">
+            <input
+              id="input-newsletter"
+              type="email"
+              placeholder="Enter email"
+            /><button type="button" class="btn-newsletter">Subscribe</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/cards/cardsArr.js"></script>
+    <script type="module" src="js/cart/cart.js"></script>
+    <script type="module" src="js/cart/CartClass.js"></script>
+    <script type="module" src="js/cart/cartFunctions.js"></script>
+    <script type="module" src="js/cart/cartNum.js"></script>
+    <script type="module" src="js/cart/cartSundry.js"></script>
+    <script type="module" src="js/cart/cartLocalStorage.js"></script>
+
+    <script type="module" src="js/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Playfair+Display:wght@400;500;600;700&family=Sigmar&family=Ysabeau:ital,wght@0,200;0,600;1,1;1,300;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/allItemsCSS/allItemsMain.css" />
+    <link rel="stylesheet" href="css/allItemsCSS/allItemsTagHeader.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/allItemsCSS/allItemsTagMain.css?v=1.0"
+    />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/tagFooter.css" />
+    <title>OnlineSHop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header-main">
+        <div class="header-container">
+          <div class="menu">
+            <div class="dots">
+              <div class="dot">.</div>
+              <div class="dot">.</div>
+              <div class="dot">.</div>
+            </div>
+            <div class="menu-list">
+              <a href="mainPage.html"
+                ><div class="logo-start">
+                  Fox
+                  <div class="allItemsFox"></div>
+                  shop
+                </div></a
+              >
+
+              <ul class="menu-main">
+                <li>
+                  <a href="mainPage.html">
+                    <strong class="home">Shop</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="mainPage.html">
+                    <strong class="about-color">Mainpage</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="ourHistory.html">
+                    <strong>Our history</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="AllItems.html">
+                    <strong>All items</strong>
+                  </a>
+                </li>
+                <li class="exit-menu">
+                  <label for="menu-checkbox" class="close-menu">
+                    <img class="img-exit" src="icon/exit-white.svg" alt="#" />
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cart" id="cart">
+              <div class="cart-icon">
+                <div class="cart-img">
+                  <div class="cart-num" id="cart-num">0</div>
+                </div>
+              </div>
+              <a href="allItems.html" class="icon-fox">
+                <div class="img-fox"></div>
+              </a>
+            </div>
+            <div class="popup">
+              <div class="popup__container" id="popup_container">
+                <div class="popup__item" id="popup_product_list"></div>
+                <button type="button" class="popup__close" id="popup_close">
+                  ✖
+                </button>
+              </div>
+            </div>
+
+            <div class="overlay" id="overlay"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="wallpaper-text">
+          <h1>Home/All items</h1>
+          <h2>All Items</h2>
+        </div>
+        <div class="wallpaper">
+          <div class="wallpaper-slide"></div>
+        </div>
+        <div class="wrapper-container">
+          <div class="bag-container">
+            <div class="input-search">
+              <input id="search" placeholder="Search" />
+              <img src="icon/loup.svg" alt="" />
+            </div>
+            <div class="text-topic">Topic</div>
+            <div class="topic">
+              <div class="filter-button all" data-filter="All">All</div>
+              <div class="filter-button forest" data-filter="Forest">
+                Forest
+              </div>
+              <div class="filter-button kids" data-filter="Foxkid">
+                Foxs kids
+              </div>
+              <div class="filter-button kids" data-filter="Office">Office</div>
+              <div class="filter-button other" data-filter="Other">Other</div>
+            </div>
+            <div class="price">
+              <div class="text-price">Price</div>
+              <input
+                type="range"
+                id="range"
+                min="0"
+                max="300"
+                value="210"
+                placeholder="#"
+              />
+              <p>Value: $ <output id="value">210</output></p>
+            </div>
+          </div>
+          <div class="all-foxes-container">
+            <div class="cards-container" id="cards-container"></div>
+            <div class="btn-allFoxes">
+              <button type="button" class="allFoxes">All foxes</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/cards/cards.js"></script>
+    <script type="module" src="js/cards/cardsArr.js"></script>
+    <script type="module" src="js/cards/cardsFilters.js"></script>
+    <script type="module" src="js/cart/cart.js"></script>
+    <script type="module" src="js/cart/CartClass.js"></script>
+    <script type="module" src="js/cart/cartFunctions.js"></script>
+    <script type="module" src="js/cart/cartNum.js"></script>
+    <script type="module" src="js/cart/cartSundry.js"></script>
+    <script type="module" src="js/cart/cartLocalStorage.js"></script>
+
+    <script type="module" src="js/footer.js"></script>
+  </body>
+</html>
