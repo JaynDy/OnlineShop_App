@@ -8,7 +8,7 @@ For the convenience of the user, filters have been created to search for the req
 The user can add, edit, and remove products from the cart.
 The cart data is stored in the local storage.
 
-Это многостраничное приложение c адаптивным дизайном, созданное с использованием HTML, CSS, JavaScript.
+Это многостраничное приложение c адаптивным дизайном.
 Применяется Grid и Flexbox.
 Для удобства пользователя созданы фильтры для поиска нужного товара, а также шкала стоимости товаров.
 Пользователь может добавлять, редактировать и удалять товары из корзины.
