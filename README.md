@@ -1,5 +1,7 @@
 # OnlinShop_App
 
+Technologies: React, Redux, JavaScript
+
 This is a multi-page app with a responsive design, created using HTML, CSS, and JavaScript.
 It uses Grid and Flexbox.
 For the convenience of the user, filters have been created to search for the required products, along with a price scale for the products.
